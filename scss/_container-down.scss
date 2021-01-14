@@ -1,0 +1,31 @@
+.container__down {
+    display: $display-flex;
+    @include dimension(35vh, 100%); 
+}
+
+.base-img-left {
+    @include dimension(none, 33%); 
+    @include fondo("/images/image-about-dark.jpg", 380px 267px);   
+}
+
+.base-text {
+    @include dimension(none, 45%); 
+}
+
+.base-text__title {
+    font-family: $font-1;
+    letter-spacing: 5px;
+    @include box(20px 40px 0px 45px, 50px 0 0 0); 
+}
+
+.base-text__p {
+    text-align: $text-start;
+    font-size: $fontsize-p;
+    @include box(10px 40px, 5px);
+    font-family: $font-1;   
+}
+
+.base-img-right {
+    @include dimension(none, 38%); 
+    @include fondo("/images/image-about-light.jpg", 445px 267px);
+}

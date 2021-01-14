@@ -1,0 +1,15 @@
+@mixin box($margin: 0px, $padding:0px){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin fondo($img, $imgsize){
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-size: $imgsize;
+}
+
+@mixin dimension($height: none, $width: none) {
+    height: $height;
+    width: $width;
+}

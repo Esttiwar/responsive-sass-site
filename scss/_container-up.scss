@@ -1,0 +1,120 @@
+.container__up {
+    display: $display-flex;
+    @include dimension(65vh); 
+}
+
+.main {
+    @include dimension(none,62%); 
+    position: relative;
+}
+
+.main__fondo {
+    @include fondo("/images/desktop-image-hero1.jpg", 400px 300px);
+    width: 754px;
+    height: 435px;
+}
+
+.main__burguer {
+    display: none; 
+    position: absolute;
+}
+
+.main__x {
+    display: none;
+    position: absolute;
+}
+
+.main__logo {
+    @include box(-390px 0 -0px -128px, 0px 2px 0px 184px);
+    position: absolute;
+}
+
+.main__nav {
+    @include box(-400px 0 0 140px);
+    position: absolute;
+}
+
+.main__menu {
+    @include box(0,10px); 
+}
+
+.menu__a {
+    text-decoration: none;
+    color: $color-white;
+    font-family: $font-2;
+    font-weight: 500;
+    transition: border-bottom 300ms;
+}
+
+.menu__a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+
+li {
+    display: $display-inline;
+    @include box(5px,5px);
+}
+
+
+.text {
+    @include dimension(none, 45%); 
+}
+
+.text__title-hero {
+    @include box(96px 80px);
+    font-family: $font-1;
+    font-size: 35px;
+}
+
+.text__p-hero {
+    text-align: $text-start;
+    font-size: $fontsize-p;
+    @include box(-70px 75px, 5px);
+    font-family: $font-1;
+}
+
+.text__link-promo {
+    text-decoration: none;
+    color: $color-black; 
+}
+
+.text__promo {
+    @include box(97px 129px -166px 80px);
+    font-family: $font-2;
+    letter-spacing: 10px;
+    font-size: $fontsize-p;
+}
+
+.text__promo:hover {
+    color: rgb(116, 114, 114);
+}
+
+.text__arrow-promo {
+    @include dimension(13px, 40px); 
+    @include box(154px 0px -131px 247px);
+}
+
+.text__arrow-slice {
+    background-color: $color-black;
+    @include dimension(55px, 120px); 
+    @include box(174px 0, 10px);
+    display: flex;
+    position: absolute;
+}
+
+.arrow__slice-inside-left {
+    @include box(-10px -21px -10px -10px, 15px 26px 0 21px);
+}
+
+.arrow__slice-inside-left:hover {
+    background: rgb(65, 64, 64);
+}
+
+.arrow__slice-inside-right {   
+    @include box(-10px 0 -10px 21px, 15px 21px 0 24px);
+}
+
+.arrow__slice-inside-right:hover {
+    background: rgb(65, 64, 64);
+}

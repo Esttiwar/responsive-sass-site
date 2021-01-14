@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "container-up";
+@import "container-down";
+@import "media-query";
+
+* {
+    @include box();
+    box-sizing: border-box;
+}
+
+.container {
+    @include dimension(100vh, 100%); 
+}
+
+
+
+
+

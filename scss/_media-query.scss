@@ -1,0 +1,138 @@
+@media screen and (max-width: 375px) {
+    * {
+        @include box();
+        box-sizing: border-box;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container__up {
+        @include dimension(150%, 100%); 
+        display: $display-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;    
+    }
+
+    .main {
+        @include dimension(41%, 100%);
+        position: relative;  
+    }
+
+    .main__fondo {
+        position: absolute;  
+        top: 0;
+        left: 0;
+        @include dimension(100%, 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .main__burguer {
+        @include box(40px -28px 87px 45px);
+        display: $display-inline;
+        cursor: pointer;
+    }
+
+    .main__x{
+        @include box(-87px -28px 87px 31px);
+        display: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .main__logo {
+        @include box(42px 30px 85px 156px);
+    }
+
+    .main__nav {
+        display: none;
+        @include box(-96px 0px 85px 73px);
+        z-index: 2;
+    }
+
+    .menu__a {
+        text-decoration: none;
+        color: $color-black;
+        font-family: $font-2;
+        font-weight: 580;
+        transition: border-bottom 300ms;
+    }
+
+    .main__background-mobile{
+        display: none;
+        background-color: $color-white;
+        position: relative;
+        padding: 17px 70px 97px 168px;
+        margin: 0px 0px 19px 0px;
+        z-index: 1;
+    }
+
+    .text {
+        @include dimension(59%, 100%); 
+    }
+
+    .text__title-hero {  
+        text-align: $text-start;
+        font-size: 25px;
+        @include box(70px 40px 5px 40px);
+    }
+
+    .text__p-hero {
+        font-family: $font-1;
+        @include box(10px 40px 0px 40px, 10px 0 0 0);
+        font-size: $fontsize-p; 
+    }
+
+    .text__promo {
+        @include box(56px 0px -166px 41px);
+        font-size: $fontsize-p;
+    }
+
+    .text__arrow-promo {  
+        @include box(94px 0px -153px 208px);    
+    }
+
+    .text__arrow-slice {
+        background-color: $color-black;
+        @include dimension(55px, 120px); 
+        @include box(-235px 0px -0px 255px, 10px);  
+    }
+
+    .container__down{
+        @include dimension(150%, 100%); 
+        display: $display-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;  
+    }
+
+    .base-img-left {
+        @include dimension(50%, 100%); 
+        @include fondo("/images/image-about-dark.jpg", 375px 290px);
+    }
+
+    .base-text {
+        @include dimension(50%, 100%);    
+    }
+    
+
+    .base-text__title {
+        font-family: $font-1;
+        letter-spacing: 5px;
+        @include box(20px 40px 0px 45px, 50px 0 0 0);  
+    }
+
+    .base-text__p {
+        text-align: $text-start;
+        font-size: $fontsize-p;
+        @include box(10px 40px, 5px);
+        font-family: $font-1;
+    }
+
+    .base-img-right {
+        @include dimension(50%, 100%); 
+        @include fondo("/images/image-about-light.jpg", 375px 290px); 
+    }
+}
