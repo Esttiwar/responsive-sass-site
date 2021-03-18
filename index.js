@@ -1,6 +1,6 @@
 let num = 1;
-const imageDesktop = "images/desktop-image-hero";
-const imageMobile ="images/mobile-image-hero";
+const imageDesktop = "/images/desktop-image-hero";
+const imageMobile ="/images/mobile-image-hero";
 
 function sizeScreen() {
     const width = document.querySelector("body").clientWidth;
