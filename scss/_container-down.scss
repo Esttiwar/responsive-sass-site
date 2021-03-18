@@ -27,5 +27,5 @@
 
 .base-img-right {
     @include dimension(none, 38%); 
-    @include fondo("/images/image-about-light.jpg", 445px 267px);
+    @include fondo("./images/image-about-light.jpg", 445px 267px);
 }
